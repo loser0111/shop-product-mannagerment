@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: product-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/shop_product?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    redisson:
+      config:
+        singleServerConfig:
+          address: redis://localhost:6379
+          password: 
+          database: 0
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        namespace: product
+  rocketmq:
+    name-server: localhost:9876
+    producer:
+      group: product-group
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.shop.product.domain.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8080
+
+dubbo:
+  application:
+    name: product-service
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: nacos://localhost:8848
+  scan:
+    base-packages: com.shop.product.interfaces.rpc
+
+seata:
+  enabled: true
+  application-id: product-service
+  tx-service-group: product-service-group
