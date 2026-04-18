@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84b8feb9-2e97-40a2-9a3b-d39569156227" name="Changes" comment="" />
+    <list default="true" id="84b8feb9-2e97-40a2-9a3b-d39569156227" name="Changes" comment="代码合并">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-application/src/main/java/com/shop/product/application/service/ProductApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-application/src/main/java/com/shop/product/application/service/ProductApplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-infrastructure/src/main/java/com/shop/product/infrastructure/config/DubboConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-infrastructure/src/main/java/com/shop/product/infrastructure/config/DubboConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-start/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-start/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-start/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-start/src/main/resources/bootstrap.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,21 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "loser0111"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;loser0111&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:loser0111/shop-product-mannagerment.git",
-    "accountId": "8880bf16-8f6c-4bf4-972d-18bd7ad24ae2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:loser0111/shop-product-mannagerment.git&quot;,
+    &quot;accountId&quot;: &quot;8880bf16-8f6c-4bf4-972d-18bd7ad24ae2&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3CCKaWjYtnA2qaBIuDbi5kMJxq4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,6 +45,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ProductApplication (1).executor": "Run",
+    "Application.ProductApplication.executor": "Run",
     "Maven.shop-product-management [clean].executor": "Run",
     "Maven.shop-product-management [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -43,10 +55,39 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/MyJava/shop/shop-product-mannagerment"
+    "last_opened_file_path": "D:/MyJava/shop/shop-product-mannagerment",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ProductApplication">
+    <configuration name="ProductApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shop.product.ProductApplication" />
+      <module name="shop-product-interface" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shop.product.ProductApplication" />
+      <module name="shop-product-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="shop-product-mannagerment" />
       <method v="2">
@@ -58,6 +99,12 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductApplication" />
+        <item itemvalue="Application.ProductApplication (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +114,19 @@
       <option name="presentableId" value="Default" />
       <updated>1775884175461</updated>
     </task>
+    <task id="LOCAL-00001" summary="代码合并">
+      <option name="closed" value="true" />
+      <created>1775887666630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775887666630</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="代码合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码合并" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package com.shop.product.application.service;
 
 import com.shop.product.application.command.CreateProductCommand;
+import com.shop.product.application.command.CreateSkuCommand;
 import com.shop.product.application.dto.ProductDTO;
 import com.shop.product.domain.inventory.Inventory;
 import com.shop.product.domain.product.Product;
@@ -16,6 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -63,8 +65,9 @@ public class ProductApplicationService {
         
         // 3. 添加商品图片
         if (command.getImages() != null) {
-            command.getImages().forEach(img -> 
-                product.addImage(img.getUrl(), img.getSortOrder(), img.getIsMain())
+            Product finalProduct = product;
+            command.getImages().forEach(img ->
+                finalProduct.addImage(img.getUrl(), img.getSortOrder(), img.getIsMain())
             );
         }
         
